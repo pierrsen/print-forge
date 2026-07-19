@@ -23,6 +23,12 @@ export type CategoriesData = {
     categories: Category[]
 }
 
+export type CategoryPageProps = {
+    params: Promise<{
+        categoryName: string
+    }>
+}
+
 export type ModelDetailPageProps = {
     params: Promise<{
         id: string
