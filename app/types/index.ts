@@ -14,6 +14,15 @@ export type Model = {
   dateAdded: string
 }
 
+export type Category = {
+    displayName: string
+    slug: string
+}
+
+export type CategoriesData = {
+    categories: Category[]
+}
+
 export type ModelDetailPageProps = {
     params: Promise<{
         id: string
@@ -22,6 +31,11 @@ export type ModelDetailPageProps = {
 
 export type ModelCardProps = {
     model: Model
+}
+
+export type ModelsGridProps = {
+    title: string
+    models: Model[]
 }
 
 export type PillProps = {
